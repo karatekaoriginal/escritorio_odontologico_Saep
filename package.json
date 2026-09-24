@@ -1,0 +1,21 @@
+{
+  "name": "escritorio_odontologico_saep",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fastify/cors": "^11.3.0",
+    "@fastify/jwt": "^10.2.2",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^18.0.3",
+    "fastify": "^5.12.5",
+    "pg": "^8.23.0"
+  }
+}

@@ -1,0 +1,41 @@
+###
+
+GET http://localhost:3000/clientes
+
+###
+
+POST http://localhost:3000/clientes
+Content-Type: application/json
+
+{
+    "nome": "Marcos Vinicius Silva Coelho",
+    "email": "marcos@gmail.com",
+    "senha": "12345",
+    "cpf": "091.297.249-10"
+}
+
+###
+
+PUT http://localhost:3000/clientes/1
+Content-Type: application/json
+
+{
+    "nome": "alexandre",
+    "email": "marquinhoLindo@gmail.com",
+    "senha": "12345",
+    "cpf": "091.297.249-10"
+}
+
+###
+
+DELETE http://localhost:3000/clientes/2
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "senha": "12345",
+    "email": "marquinhoLindo@gmail.com"
+}
