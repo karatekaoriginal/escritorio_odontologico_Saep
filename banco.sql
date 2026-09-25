@@ -1,18 +1,26 @@
 CREATE TYPE status_consulta AS ENUM 
 ('Concluída', 'Agendada', 'Cancelada');
 
+CREATE TABLE if not exists Usuario (
+    id_usuario SERIAL PRIMARY KEY,
+	nome VARCHAR(255) NOT NULL,
+	cpf VARCHAR(255) UNIQUE NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+	senha  VARCHAR(128) NOT NULL
+);
+
 CREATE TABLE if not exists Cliente (
     id_cliente SERIAL PRIMARY KEY,
-	cpf VARCHAR(14) UNIQUE NOT NULL,
-    email VARCHAR(255) UNIQUE NOT NULL,
-    senha  VARCHAR(128) NOT NULL
+	nome VARCHAR(255) NOT NULL,
+	cpf VARCHAR(255) UNIQUE NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL
 );
 
 CREATE TABLE if not exists Dentista (
     id_dentista SERIAL PRIMARY KEY,
-	cpf VARCHAR(14) UNIQUE NOT NULL,
-    email VARCHAR(255) UNIQUE NOT NULL,
-    senha  VARCHAR(128) NOT NULL
+	nome VARCHAR(255) NOT NULL,
+	cpf VARCHAR(255) UNIQUE NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL
 );
 
 

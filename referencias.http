@@ -1,3 +1,4 @@
+// CRUD dos clientes
 ###
 
 GET http://localhost:3000/clientes
@@ -8,10 +9,9 @@ POST http://localhost:3000/clientes
 Content-Type: application/json
 
 {
-    "nome": "Marcos Vinicius Silva Coelho",
-    "email": "marcos@gmail.com",
-    "senha": "12345",
-    "cpf": "091.297.249-10"
+    "nome": "arcos Vinicius Silva Coelho",
+    "email": "arcos@gmail.com",
+    "cpf": "091.297.249-00"
 }
 
 ###
@@ -22,20 +22,77 @@ Content-Type: application/json
 {
     "nome": "alexandre",
     "email": "marquinhoLindo@gmail.com",
-    "senha": "12345",
     "cpf": "091.297.249-10"
 }
 
 ###
 
-DELETE http://localhost:3000/clientes/2
+DELETE http://localhost:3000/clientes/1
+
+// CRUD dos dentistas
+###
+
+GET http://localhost:3000/dentistas
 
 ###
 
+POST http://localhost:3000/dentistas
+Content-Type: application/json
+
+{
+    "nome": "Marcos Vinicius Silva Coelho",
+    "email": "marcos@gmail.com",
+    "cpf": "091.297.249-11"
+}
+
+###
+
+PUT http://localhost:3000/dentistas/1
+Content-Type: application/json
+
+{
+    "nome": "alexandre",
+    "email": "marquinhoLindo@gmail.com",
+    "cpf": "091.297.249-10"
+}
+
+###
+
+DELETE http://localhost:3000/dentistas/1
+
+###
+// CRUD dos Usuários
 POST http://localhost:3000/login
 Content-Type: application/json
 
 {
-    "senha": "12345",
-    "email": "marquinhoLindo@gmail.com"
+    "email": "marquinhoLindo@gmail.com",
+    "senha": "12345"
+}
+
+
+###
+
+GET http://localhost:3000/usuarios
+
+###
+
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+    "nome": "Marcos Vinicius Silva Coelho",
+    "email": "marcos@gmail.com",
+    "cpf": "091.297.249-11"
+}
+
+###
+
+PUT http://localhost:3000/usuarios/1
+Content-Type: application/json
+
+{
+    "nome": "alexandre",
+    "email": "marquinhoLindo@gmail.com",
+    "cpf": "091.297.249-10"
 }
